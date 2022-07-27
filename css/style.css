@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;500&display=swap');
+
+* { /*contando padding como tamanho do elemento*/
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Anek Malayalam', sans-serif;
+    /*background: slategray;*/
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    color: bisque;
+    height: calc(100vh - 150px); /*definindo tamanho do header*/
+    /*background: no-repeat center/cover url(fundo.jpg);*/
+    background: rgb(7, 7, 7);
+}
+
+header nav{ /*todo conteúdo da nav na mesma linha*/
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+/*nav p{ /*fonte para diferenciar o logo/
+    font-weight: bold;
+}*/
+
+header nav ul{ /*conteúdo da ul uma do lado da outra*/
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{ /*separando cada item*/
+    margin: 0 15px;
+}
+
+.header-content{ /*posicionando o conteúdo da classe da div*/
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center; /*alinhando texto*/
+}
+
+.header-content h1{ /*diminuindo a margem do h1*/
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+#home a:hover{
+    font-weight: bold;
+    color: burlywood;
+}
+
+.artigos{
+    background: rgb(32, 31, 32);
+    /*height: 500px; tamanho sessão pacote*/
+    padding: 15px;
+}
+
+.artigos .artigos-title{
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.artigos .artigos-cards{
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.artigos .card{ /*definindo tamanho da div*/
+    width: 200px;
+    height: 300px;
+    border-radius: 20px 0 ;
+    margin: 25px 25px;
+    background: bisque;
+}
+
+.artigos .card-image{ /*definindo tamanho da imagem e adicionando borda*/
+    width: 200px;
+    height: 150px;
+    border-radius: 20px 0 0 0; /*definindo a borda do tamanho da borda da div*/
+    object-fit: cover;
+}
+
+.artigos .card-content{ /*centralizando conteúdo da div*/
+    padding: 0 5px;
+}
+
+.artigos .card-content ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px;
+    margin: 3px;
+}
+
+.artigos .card-content ul li{
+    /*color:gray;*/
+    font-size: 1rem;
+    margin: 3px 0;
+    /*font-weight: bold;*/
+}
+
+.artigos .card-content ul a{
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+    color: rgb(77, 74, 77);
+}
+
+.artigos .card-content ul a:hover, .active{
+	color: rgb(77, 74, 77);
+    font-weight: bold;
+}
+
+/*ESTILIZANDO SESSÃO VIDEOS*/
+.videos{
+    background: rgb(77, 74, 77);
+    /*height: 500px; tamanho sessão pacote*/
+    padding: 15px;
+}
+
+.videos .videos-title{
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.videos .videos-cards{
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.videos .card{ /*definindo tamanho da div*/
+    width: 200px;
+    height: 300px;
+    border-radius: 20px 0 ;
+    margin: 25px 25px;
+    background: bisque;
+}
+
+.videos .card-image{ /*definindo tamanho da imagem e adicionando borda*/
+    width: 200px;
+    height: 150px;
+    border-radius: 20px 0 0 0; /*definindo a borda do tamanho da borda da div*/
+    object-fit: cover;
+}
+
+.videos .card-content{ /*centralizando conteúdo da div*/
+    padding: 0 5px;
+}
+
+.videos .card-content ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px;
+    margin: 3px;
+}
+
+.videos .card-content ul li{
+    /*color:gray;*/
+    font-size: 1rem;
+    margin: 10px auto;
+    /*font-weight: bold;*/
+}
+
+.videos .card-content ul a{
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+    color: rgb(77, 74, 77);
+}
+
+.videos .card-content ul a:hover, .active{
+	color: rgb(77, 74, 77);
+    font-weight: bold;
+}
+
+/*ESTILIZANDO SESSÃO CONTATO*/
+.sugestao{
+    padding: 60px;
+    background: rgb(143, 138, 143);
+    position: relative;
+}
+
+.sugestao .sugestao-title{
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.sugestao p{
+    max-width: 500px;
+    margin: 15px auto;
+    text-align: center;
+}
+
+.sugestao a:hover{
+    font-weight: bold;
+}

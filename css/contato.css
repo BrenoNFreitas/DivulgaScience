@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;500&display=swap');
+
+* { /*contando padding como tamanho do elemento*/
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Anek Malayalam', sans-serif;
+    /*background: slategray;*/
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    color: bisque;
+    height: calc(100vh - 150px); /*definindo tamanho do header*/
+    background: rgb(7, 7, 7);
+}
+
+header nav{ /*todo conteúdo da nav na mesma linha*/
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+header nav ul{ /*conteúdo da ul uma do lado da outra*/
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{ /*separando cada item*/
+    margin: 0 15px;
+}
+
+.header-content{ /*posicionando o conteúdo da classe da div*/
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center; /*alinhando texto*/
+}
+
+.header-content h1{ /*diminuindo a margem do h1*/
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+/*ESTILIZANDO SESSÃO CONTATO*/
+.contato{
+    padding: 60px;
+    background: rgb(143, 138, 143);
+    position: relative;
+}
+
+.contato .contatos-title{
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.contato .contato-card{
+    width: 300px;
+    height: 250px;
+    background: bisque;
+    position: absolute;
+    z-index: 99;
+    text-align: center;
+
+    top: calc(60% - 150px);
+    left: calc(25% - 175px);
+    border-radius: 8px;
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    box-shadow: 0 1px 6px 0 rgb(32, 33, 36, .28);
+}
+
+.contato .contato-card h1{
+    padding-left: 50px;
+    text-align: left;
+}
+
+.contato .contato-card ul{
+    font-size: .8rem;
+    font-weight: bold;
+    color: rgb(77, 74, 77);
+    padding: 0;
+}
+
+.contato .contato-card ul li{
+    margin: 10px;   
+}
+
+.contato .contato-midia{
+    text-align: center;
+}
+
+/*BOTOES DE MIDIA*/
+.contato .contato-midia ul{
+    padding: 0; 
+    display: flex; 
+    justify-content: center;  
+}
+
+.contato .contato-midia ul a{
+    margin: 15px;
+    max-width: 70px;
+    font-size: 18px;
+}
+
+.contato .contato-midia li:hover{
+    color: bisque;
+}

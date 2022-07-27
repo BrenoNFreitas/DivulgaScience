@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Malayalam:wght@400;500&display=swap');
+
+* { /*contando padding como tamanho do elemento*/
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Anek Malayalam', sans-serif;
+    /*background: slategray;*/
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
+header{
+    color: bisque;
+    height: calc(100vh - 150px); /*definindo tamanho do header*/
+    background: rgb(7, 7, 7);
+}
+
+header nav{ /*todo conteúdo da nav na mesma linha*/
+    display: flex;
+    justify-content: space-between;
+    margin: auto 30px;
+}
+
+header nav ul{ /*conteúdo da ul uma do lado da outra*/
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{ /*separando cada item*/
+    margin: 0 15px;
+}
+
+.header-content{ /*posicionando o conteúdo da classe da div*/
+    max-width: 400px;
+    margin: 150px auto;
+    text-align: center; /*alinhando texto*/
+}
+
+.header-content h1{ /*diminuindo a margem do h1*/
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+
+/*ESTILIZANDO SESSÃO VIDEOS*/
+.videos{
+    background: rgb(77, 74, 77);
+    /*height: 500px; tamanho sessão pacote*/
+    padding: 15px;
+}
+
+.videos .videos-title{
+    width: 100%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.videos .videos-cards{
+    display: flex;
+    margin: auto;
+    max-width: 950px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.videos .card{ /*definindo tamanho da div*/
+    width: 800px;
+    height: 300px;
+    border-radius: 20px 0 ;
+    margin: 25px 25px;
+    background: bisque;
+    display: flex;
+    align-items: stretch;
+}
+
+.videos .card-image{ /*definindo tamanho da imagem e adicionando borda*/
+    width: 400px;
+    height: 300px;
+    border-radius: 20px 0 0 0; /*definindo a borda do tamanho da borda da div*/
+    object-fit: cover;
+}
+
+.videos .card-content{ /*centralizando conteúdo da div*/
+    padding: 0 5px;
+    width: 200px;;
+}
+
+.videos .card-content ul{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0px;
+    margin: 3px;
+}
+
+.videos .card-content ul li{
+    /*color:gray;*/
+    font-size: 1rem;
+    margin: 3px 0;
+    /*font-weight: bold;*/
+}
+
+.videos .card .descricao{
+    margin: 5px auto;
+    max-width: 500px;
+    max-height: 300px;
+    /*display: flex;*/
+}
+
+.videos .descricao a{
+    display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+    color: rgb(77, 74, 77);
+    font-size: 18px;
+}
+
+.videos .card .descricao p{
+    /*text-align: center;*/
+    margin: 25px auto;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
+    color: rgb(59, 57, 59);
+    max-height: 200px;
+}
+
+.videos .descricao a:hover, .active{
+	color: rgb(77, 74, 77);
+    font-weight: bold;
+}
