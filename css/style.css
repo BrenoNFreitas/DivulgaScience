@@ -216,3 +216,95 @@ header nav ul li{ /*separando cada item*/
 .sugestao a:hover{
     font-weight: bold;
 }
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px){
+    nav .header-content{
+        font-size: 18px;
+    }
+
+    .header-content{
+        font-size: 22px;
+    }
+
+    .artigos .artigos-cards{
+        align-items: center;
+        flex-flow: column;
+    }
+
+    .artigos .card{
+        width: 300px;
+        text-align: center;
+    }
+
+    .artigos .card-image{
+        width: 300px;
+    }
+
+    .artigos .card-content ul li{
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    .videos .videos-cards{
+        align-items: center;
+        flex-flow: column;
+    }
+
+    .videos .card{
+        width: 300px;
+        text-align: center;
+    }
+
+    .videos .card-image{
+        width: 300px;
+        height: 200px;
+    }
+
+    .videos .card-content ul li{
+        margin: 10px;
+        font-size: 18px;
+    }
+
+    .sugestao{
+        padding: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 570px){
+
+    header nav ul{ /*fixando a barra de menu na parte debaixo da tela*/
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        z-index: 99;
+
+        background: grey;
+        font: bold;
+        height: 55px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-content{
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .sugestao p{
+        padding: 10px;
+        font-size: 18px;
+    }
+}

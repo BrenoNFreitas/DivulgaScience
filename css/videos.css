@@ -139,3 +139,63 @@ header nav ul li{ /*separando cada item*/
 	color: rgb(77, 74, 77);
     font-weight: bold;
 }
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px){
+    .videos .card-image{
+        width: 300px;
+        height: 300px;
+    }
+
+    .videos .card .descricao a{
+        padding: 10px;
+        margin: 10px auto;
+    }
+
+    .videos .card .descricao p{
+        margin: 5px auto;
+        padding: 5px;
+    }
+}
+
+@media (max-width: 580px){
+
+    header nav ul{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        z-index: 99;
+
+        background: grey;
+        font: bold;
+        height: 55px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .videos .card{
+        max-width: 450px;
+        height: auto;
+        display: block;
+    }
+
+    .videos .card-image{
+        width: 100%;
+        height: 250px;
+    }
+
+    .videos .card .descricao a{
+        width: -webkit-fill-available;
+    }
+}

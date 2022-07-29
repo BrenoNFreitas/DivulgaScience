@@ -73,36 +73,43 @@ header nav ul li{ /*separando cada item*/
 
 .artigos .card{ /*definindo tamanho da div*/
     width: 700px;
-    height: 300px;
+    /*height: 300px;*/
     border-radius: 20px 0 ;
     margin: 25px 25px;
     background: bisque;
-    display: flex;
+    /*display: flex;*/
     align-items: stretch;
 }
 
 .artigos .card-image{ /*definindo tamanho da imagem e adicionando borda*/
-    width: 200px;
-    height: 150px;
+    width: 350px;
+    height: 200px;
     border-radius: 20px 0 0 0; /*definindo a borda do tamanho da borda da div*/
     object-fit: cover;
 }
 
 .artigos .card .infos{
-    width: 200px;
-    /*border-right: black;*/
+    display: flex;
+    max-width: 700px;
 }
 
-.artigos .card-content{ /*centralizando conteúdo da div*/
-    padding: 0 5px;
-    /*background: green;*/
-    width: 200px;
+.artigos .card .card-content{
+    max-width: 350px;
+    display: flex;
+    margin: auto;
+}
+
+.artigos .card .card-content a p{ /*centralizando conteúdo da div*/
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 .artigos .card .descricao{
     margin: 10px;
-    max-width: 500px;
-    max-height: 300px;
+    /*max-width: 500px;
+    max-height: 300px;*/
     display: flex;
 }
 
@@ -127,7 +134,7 @@ header nav ul li{ /*separando cada item*/
     /*color:gray;*/
     font-size: 1rem;
     margin: 3px 0;
-    width: 200px;
+    width: 300px;
     /*font-weight: bold;*/
 }
 
@@ -142,4 +149,134 @@ header nav ul li{ /*separando cada item*/
 	color: rgb(77, 74, 77);
     font-weight: bold;
     text-decoration: underline;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px){
+    header{
+        font-size: 22px;
+    }
+
+    .artigos .artigos-cards .card {
+        display: flow-root;
+        width: 550px;
+        font-size: 18px;
+    }
+
+    .artigos .artigos-cards .infos{
+        display: flex;
+        margin: inherit;
+    }
+
+    .artigos .card-image{
+        max-width: 250px;
+        max-height: 150px;
+        border-radius: 20px 0 0 0; 
+        object-fit: cover;
+        margin: 0;
+    }
+    
+    .artigos .card-content ul{
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .artigos .card .card-content ul li{
+        max-width: 250px;
+        display: flex;
+        margin: auto;
+    }
+    
+    .artigos .card .card-content a p{ /*centralizando conteúdo da div*/
+        margin: auto;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .artigos .artigos-cards .descricao{
+        margin: inherit;
+    }
+
+}
+
+@media (max-width: 580px){
+
+    header nav ul{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        z-index: 99;
+
+        background: grey;
+        font: bold;
+        height: 55px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .header-content{
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .sugestao p{
+        padding: 10px;
+        font-size: 18px;
+    }
+
+    .artigos .artigos-cards .card {
+        display: flow-root;
+        width: 400px;
+        font-size: 20px;
+    }
+
+    .artigos .artigos-cards .infos{
+        display: block;
+        margin: inherit;
+    }
+
+    .artigos .card-image{
+        max-width: 550px;
+        max-height: 200px;
+        border-radius: 20px 0 0 0; 
+        object-fit: cover;
+        margin: 0;
+    }
+
+    .artigos .card .card-content{
+        max-width: 550px;
+    }
+
+    .artigos .card .card-content ul{
+        padding: 0;
+        width: 500px;
+        margin: 0;
+    }
+
+    .artigos .card .card-content ul li{
+        max-width: 500px;
+        font-size: 20px;
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+
+    .artigos .card .descricao p{
+        font-size: 18px;
+    }
+
 }

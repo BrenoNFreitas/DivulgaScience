@@ -120,3 +120,57 @@ header nav ul li{ /*separando cada item*/
 .contato .contato-midia li:hover{
     color: bisque;
 }
+
+/*RESPONSIVIDADE*/
+@media (max-width: 780px){
+    .contato{
+        padding: 30px;
+    }
+
+    .contato .contato-card{
+        width: auto;
+        height: auto;
+        position: initial;
+        box-shadow: none;
+        margin: 10px 0;
+    }
+
+    .contato .contato-card h1{
+        padding-left: 20px;
+    }
+
+    .contato .contato-card ul{
+        font-size: 1.5rem;
+        margin: 5px;
+        padding: 5px;
+        text-align: initial;
+    }
+}
+
+@media (max-width: 580px){
+
+    header nav ul{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+        z-index: 99;
+
+        background: grey;
+        font: bold;
+        height: 55px;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    header nav p {
+        width: 100%;
+        text-align: center;
+    }
+
+}
